@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    position: relative;
+    background-color: #690009;
+    height: 100vh;
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background:radial-gradient(circle, #690009,transparent,transparent);
+}   
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+   z-index: 1000;
+    height: 80px;
+  
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     margin: 0 auto;
+    height: 100%;
+    width: 80%;
+      
+}
+header nav .logo{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;  
+      text-decoration: none;
+      color: #fbf0dc;
+      font-family: "Anton", sans-serif;
+}
+.hero .container{
+position: relative;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 10;
+
+}
+.hero .container .img{
+    width: 200px;
+}
+header .nav-links{
+    display: flex;
+    gap: 40px;
+}
+header .nav-links a{
+    text-decoration: none;
+    color: #fbf0dc;
+    transition: .3s ;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+header .nav-links a:hover{
+    color: #fbf0dc;
+}
+ /* h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 350px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+    font-family: "Anton", sans-serif;
+    z-index: 1;
+   
+} */
+.hero h1{
+font-size: 25vw;
+color: #fbf0dc;
+font-weight: 900;
+letter-spacing: 10px;
+font-family: "Anton", sans-serif; 
+text-transform: uppercase;
+}
+ #can{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1 ,0.22 , 1)0.5s;
+  
+}
+#leaf{
+    position:absolute;
+    top: 60%;
+    left: 10%;
+    width: 12%;
+    transition: all cubic-bezier(0.19, 1 ,0.22 , 1)0.5s;
+  z-index: 10;
+}
+#leaf2{
+  position:absolute;
+  top: 80%;
+  left: 50%;
+  width: 40%;
+  transition: all cubic-bezier(0.19, 1 ,0.22 , 1)0.5s;
+z-index: 10;
+}
+#quart-apple-rtl{
+  position: absolute;
+  top:50%;
+  left: -15%;
+  rotate: 85deg;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+}
+#quart-apple-ltr1{
+    position: absolute;
+    top:45%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+}
+#quart-apple-ltr2{
+  position: absolute;
+  top:45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+}
+#half-apple{
+    position: absolute;
+    top:80%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+}
+#blackberry3{
+    position: absolute;
+    top:35%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+ width: 6vw;
+}
+#coconoutleaf{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0;
+
+}
+.about{
+    padding: 100px ;
+    height: 100vh;
+}
+.about .text{
+    width: 50%;
+}
+
+.about .text h2{
+    font-size: 3.5vw;
+    color: #0d071c;
+position: relative;
+    text-transform: capitalize;
+   z-index: 20;
+}
+.about .text h2 span{
+  color: #690009;
+}
+  .about .text .boxs{
+    display: flex;
+    gap: 50px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+  }
+  .about .text .boxs .box img{
+    height:200px;
+    rotate:35deg;
+  }
+  .about .text .boxs .box h4{
+    margin: 20px 0 10px;
+    font-size: 1.5vw;
+    color: #0d071c  ;
+  }
+  .about .text .boxs .box p{
+    font-size: 1vw;
+    color: #4b4b4b;
+
+  }
+  .about .text .btn{
+    font-size: 18px;
+    border: 1px solid #690009;
+    background-color: #690009;
+    color: #fbf0dc;
+    padding: 15px 45px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: .3s ease;
+    font-weight: bold;
+  
+  }
+  .about .text .btn:hover{
+    background-color: transparent;
+    color: #690009;
+  }
+  .stand{
+    height: 85vh;
+    background-color: #690009;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+  }
+  .stand .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .stand img{
+    width: 70%;
+  }
+  .stand h3{
+    position: absolute;
+    top: -20vh;
+    left: 50%;
+    transform:translateX(-50%);
+    font-size: 26vh;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    color: #690009;
+   letter-spacing: 7px;
+  }
