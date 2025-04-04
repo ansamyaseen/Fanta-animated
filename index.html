@@ -6,25 +6,26 @@
     <title>Fanta</title>
 
     <!-- File CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
+    <div class="kofta">
       <header>
         <nav>
-          <a href="#" class="logo">Fanta</a>
-          <div class="nav-links">
+          <a href="#" id="logo">Fanta</a>
+          <div id="nav-links">
     
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Product</a>
-            <a href="#">Content</a>
+            <a  id="links" href="#" data-target="kkk">Home</a>
+            <a  id="links" href="#"data-target="parent" >About</a>
+            <a  id="links" href="#" data-target="stand">Product</a>
+         
         
          </div>
         </nav>
       </header>
       
-      <div class="container">
+      <div class="kkk">
         <h1>Fanta</h1>
         <img id="can" src="img/fanta.png" alt="">
         <img id="quart-apple-rtl" src="img/quart-apple.png" alt="">
@@ -35,51 +36,155 @@
         <img id="coconoutleaf" src="img/coconoutleaf.png" alt="">
         <img  id="leaf" src="img/leaf.png" alt="">
         <img  id="leaf2" src="img/leaf1.png" alt="">
+      </div>
+      <p id="new"> New Edition!</p>
+    </div>
+
+
+    <div class="parent">
        
-      </div>
+      <div class="nutrition-container">
+          <img  id="about-apple"src="img/all-apple.png" alt="">
+          <img  id="about-apple"src="img/all-apple.png" alt="">
+          <img  id="about-apple"src="img/all-apple.png" alt="">
+         
+          <h2 class="title">Nutritional information</h2>
+<hr>
 
-    </div>
-    <div class="about two">
-      <div class="container">
-        <div class="text">
-          <h2>Best Ingredients <br>Food Juices <span> On Right Handmade</span></h2>
+<table class="nutrition-table">
+  <tr>
+      <th>100ml</th>
+      <th>Package size per</th>
+  </tr>
+  <tr>
+      <td>46</td>
+      <td>Energy (calories)</td>
+  </tr>
+  <tr>
+      <td>11.5g</td>
+      <td>Carbohydrates</td>
+  </tr>
+  <tr>
+      <td>11.5g</td>
+      <td>And sugars in it</td>
+  </tr>
+  <tr>
+      <td>0g</td>
+      <td>Protein</td>
+  </tr>
+  <tr>
+      <td>0g</td>
+      <td>Total fat</td>
+  </tr>
+  <tr>
+      <td>Less than 10 mg</td>
+      <td>Sodium</td>
+  </tr>
+</table>
 
-          <div class="boxs">
+<hr>
 
-            <div class="box">
-              <img src="img/half.png" alt="">
-              <h4>Apple</h4>
-              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-            </div>
-
-            <div class="box">
-              <img src="img/half.png" alt="">
-              <h4>Apple</h4>
-              <p>Lorem ipsum dolor sit amet
-                Lorem ipsum dolor sit amet
-              </p>
-            </div>
-          </div>
-          <a href="#" class="btn">Shop</a>
-        </div>
-      </div>
-    </div>
-
-<div class="stand three">
-  <div class="container">
-    <h3>Apple</h3>
-    <img src="img/stand.png" alt="">
-  </div>
+<h3 class="subtitle">THE COMPONENTS</h3>
+<p class="components">
+  Carbonated water, sugar or fructose syrup, acidity regulators (citric acid, malic acid, trisodium citrate), 
+  stabilizers (gum arabic, pine or pine wood glycerol ester (rosin)), preservative within permitted limits 
+  (sodium benzoate, potassium sorbate), orange flavors, color (sunset yellow), antioxidant (ascorbic acid), 
+  sucralose, acesulfame potassium.
+</p>
 </div>
+
+ 
+  
+
+</div>
+<div class="div2"> </div>
+<div class="div3"> </div>
+
+</div>
+</div>
+
+    <!-- <div class="about two">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            1 of 2
+          </div>
+          <div class="col">
+            2 of 2
+          </div>
+        </div>
+        <div class="text">
+          <h2>Best Ingredients Food Juices <span> On Right Handmade</span></h2>
+  
+          <img  id="about-apple"src="img/half.png" alt="">
+        </div>
+
+        <div class="ingredient-box" onclick="toggleIngredients()">
+          
+          <div class="ingredients">Carbonated Water, Sugar, Orange Juice, Citric Acid, Flavoring</div>
+        </div>
+        
+        <div class="btn-container">
+        
+            <a href="#" class="btn">Want to taste ?</a>
+        </div>
+        
+         
+        </div>
+        <h4>Shop Now</h4>
+        <h4>Shop Now</h4>
+        <h4>Shop Now</h4>
+        <h4>Shop Now</h4>
+        <h4>Shop Now</h4>
+        <h4>Shop Now</h4>
+        <h4>Shop Now</h4>
+   
+    </div> -->
+
+
+    <div class="stand three"  >
+      <div class="container"id="product">
+        <h3>red Apple</h3>
+        <img src="img/stand.png" alt="">
+      </div>
+    
+      <!-- الماركيه -->
+      <div class="marquee-container">
+          <div class="marquee-content">
+              <h4>Shop Now</h4>
+              <h4>Shop Now</h4>
+              <h4>Shop Now</h4>
+              <h4>Shop Now</h4>
+              <h4>Shop Now</h4>
+              <h4>Shop Now</h4>
+              <h4>Shop Now</h4>
+          </div>
+      </div>
+    </div>
 
 
     
     <!-- cdn gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
     <!-- File JS -->
     <script src="script.js"></script>
+    <script>
+ document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // Get the target class from `data-target`
+        const targetClass = this.getAttribute('data-target');
+        const targetElement = document.querySelector('.' + targetClass);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+    </script> 
 
 
   </body>
